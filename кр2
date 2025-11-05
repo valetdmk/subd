@@ -1,0 +1,4 @@
+SELECT * FROM customers c
+JOIN orders o USING (CustomerID)
+JOIN order_details od USING (OrderID)
+JOIN products p USING (ProductID)
